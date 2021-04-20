@@ -13,7 +13,9 @@ func init() {
 
 func LoadRoutes() (*gin.Engine, error) {
 	r := gin.Default()
-	r.GET("/", controllers.Test)
+	r.GET("/", controllers.TestGet)
+	r.POST("/", controllers.TestPost)
+	r.PUT("/:id", controllers.TestPut)
 
 	return r, nil
 }
