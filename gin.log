@@ -1,0 +1,13 @@
+[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /                         --> github.com/cerncorp/larago/app/http/controllers.TestGet (5 handlers)
+[GIN-debug] POST   /                         --> github.com/cerncorp/larago/app/http/controllers.TestPost (5 handlers)
+[GIN-debug] PUT    /:id                      --> github.com/cerncorp/larago/app/http/controllers.TestPut (5 handlers)
+[GIN-debug] GET    /callservice/:name/:age   --> github.com/cerncorp/larago/app/http/controllers.TestCallService (5 handlers)
+[GIN-debug] Listening and serving HTTP on localhost:8080
+127.0.0.1 - [30 Apr 21 13:03 +07] GET / 200 165µs 
+[GIN] 2021/04/30 - 13:03:53 | 200 |       592.6µs |       127.0.0.1 | GET      "/"
